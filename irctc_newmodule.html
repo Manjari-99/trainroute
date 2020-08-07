@@ -23,7 +23,7 @@
 		$('#route').click(function(){
 			var num = $('#train_num').val();
 			$.ajax({
-				'url':'https://indianrailapi.com/api/v2/TrainSchedule/apikey/386cfc792f4ab14e37a2df55adc7c075/TrainNumber/12381/',
+				'url':'https://indianrailapi.com/api/v2/TrainSchedule/apikey/386cfc792f4ab14e37a2df55adc7c075/TrainNumber/'+num+'/',
 				'success':function(data){
 					$('#message').html('');
 					$('#route_details').html('');
